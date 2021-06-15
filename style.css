@@ -43,7 +43,7 @@ body {
 
 
 body{
-  background-color: rgb(39, 67, 94);
+  background-color: rgb(16, 58, 100);
 
 }
 
@@ -147,16 +147,6 @@ body{
 
 
 
-@media (max-width: 600px){
-
-#list-links {
-  position: absolute;
-  bottom: 1000px;
-  
-}
-
-
-}
 
 .tituloNav{
   font-size: 20pt;
@@ -164,8 +154,140 @@ body{
 }
 
 
-.textoNav {
+.container-bio {
+  display: flex;
+  border: 1px black solid;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  width: 90% ;
+  height: 70vh;
+  padding: 20px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.336);
+
+  
+}
+
+
+.foto{
+  display: flex;
+  background-color: black;
+  width: 30%;
+  height: 90%;
+  object-fit: cover;
+  margin: 0;
+  position: relative;
+  right: 15px;
+  background-image: url('minhafoto.jpg');
+  border-radius: 20%;
+}
+
+.biografia{ 
+  display: flex;
+  border: 1px rgba(255, 0, 0, 0) solid;
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  margin: 0;
+  position: relative;
+  right: 15px;
+  border-radius: 20%;
+  margin-left: 20px;
+  flex-direction: column;
+  text-align: justify;
   
   
 }
 
+.biografia p {
+  color: rgb(255, 255, 255);
+  font-size: 14pt;
+
+}
+.biografia h2{
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  text-align: center;
+}
+
+.biografia p span{
+  font-weight: 900;
+}
+
+.mobile-verison{
+  font-size: 0pt;
+  color: rgba(240, 248, 255, 0);
+}
+
+@media (max-width: 700px){
+
+  #list-links {
+    position: absolute;
+    bottom: 1000px;
+    
+  }
+
+  .carousel img{
+    filter: brightness(100%);
+    width: 10vh;
+    height: 30vh;
+  
+  }
+
+  .textoFoco {
+    font-size: 20pt;
+  }
+  
+  .textoSubFoco {
+    font-size: 10pt;
+  }
+
+  .mobile-verison{
+    font-size: 12pt;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+body{
+  
+}
+  
+.foto{
+  margin: 0;
+  right: 15px;
+  border-radius: 50%;
+  height: 190px;
+  width: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.biografia{ 
+  display: flex;
+  border: 1px rgba(255, 0, 0, 0) solid;
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  margin: 0;
+  position: relative;
+  right: 15px;
+  border-radius: 20%;
+  margin-left: 20px;
+  flex-direction: column;
+  text-align: justify;
+  
+  
+}
+.biografia p {
+  color: rgb(255, 255, 255);
+  font-size: 14pt;
+
+}
+  
+  }

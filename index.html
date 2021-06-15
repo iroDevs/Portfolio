@@ -15,11 +15,11 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
     <div class="container-fluid"> 
-      <a class="navbar-brand tituloNav" href="#" >Meu App</a>
+      <a class="navbar-brand tituloNav" href="#" >Site Pessoal</a>
       <div id="list-links">
-     <a href="#" class="list-link textoNav">Sobre</a>
-     <a href="#" class="list-link textoNav">Sobre</a>
-     <a href="#" class="list-link textoNav">Sobre</a>
+     <a href="#bio" class="list-link textoNav">Sobre mim</a>
+     <a href="#" class="list-link textoNav">Estudos</a>
+     <a href="#" class="list-link textoNav">Contato</a>
       </div>
       <button id="btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,13 +37,14 @@
       </div>
       <div class="modal-body">
         <div class="list-modal">
-        <a href="#" class="list-link">Sobre</a>
-        <a href="#" class="list-link">Sobre</a>
-        <a href="#" class="list-link">Sobre</a>
+        <a href="#" class="list-link">Contato</a>
+        <a href="#bio" class="list-link">Sobre Mim</a>
+        <a href="#" class="list-link">Escolaridade e conhecimentos</a>
+        <a href="#" class="list-link">GitHub</a>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
       </div>
     </div>
   </div>
@@ -55,7 +56,7 @@
 
 
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleSlidesOnly " class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src='backJava.png' class="d-block w-100" alt="...">
@@ -67,19 +68,48 @@
       <div class="carousel-item">
         <img src="codeWallPaper.jpeg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block center">
-          <h5 class="textoFoco">Portifolio e Skills</h5>
+          <h5 class="textoFoco">Historia se Skills</h5>
         <p class="textoSubFoco">Habilidades e um pouco da historia</p>
         </div>
       </div>
     </div>
   </div>
 
-  <h1>aaaa</h1>
+  <div class="mobile-verison">
+    <h1>Versão Mobile</h1>
+  </div>
+
+  <!-- Parte sobre mim -->
   
+  <div class="quadro">
+    <div class=" container-bio">
+        <div class="foto">
+          <!-- minha foto -->
+          <hr>
+        </div>
+      
+        <div class="biografia">
+          <h2 class="title-bio">
+            Esse sou eu
+          </h2>
+          <p class="lead">
+          <span> Frase favorita :</span> "Todos somos genios, mas se você julgar um peixe pela capacidade dele de subir uma arvore ele vai passar o resto da vida pensando ser um idiota" .Abelrt Eintein
+          </p>
+              <a class="link" name='bio'></a>
+          <p>
+            Bom nasci em Inpatinga MG mas fui criado no interior em uma pequena cidade chamada Piraúba, a cidade não tem referencias tecnologicas ou grandes incentivos da area porem , isso não foi o suficiente para impedir meu amor pela tecnologia  
+          </p>
 
+        <p>
+          Muito determinado almejo sempre coisas boas, tenho bastante ambição de cada vez ser melhor dentro da minha area porem seguindo meu proprio ritimo não gosto de me comparar com os outros ,
+        </p>
 
+        </div>
+    </div>
+  </div>
 
   <!-- java script -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>

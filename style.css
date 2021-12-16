@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(255, 225, 225)
+  background-color: rgb(5 81 96);
 }
 
 .carousel{
@@ -16,7 +16,7 @@ body {
 }
 
 .animate__animated.animate__lightSpeedInLeft{
-  --animate-duration: 4s;
+  --animate-duration: 2s;
 }
 
 .carousel img{
@@ -40,11 +40,6 @@ body {
   font-size: 20pt;
 }
 
-
-body{
-  background-color: rgb(16, 58, 100);
-
-}
 
 .navbar {
   position: fixed;
@@ -88,7 +83,7 @@ body{
   color:  black;
   font-size: 15pt;
   padding: 10px 50px;
-  border: 1px rgba(0, 0, 0, 0) solid;
+  border: 1px rgba(109, 109, 109, 0) solid;
   
 
 }
@@ -159,13 +154,14 @@ body{
   margin-top: 200px;
   margin-bottom: 50px;
   width: 90% ;
-  height: 70vh;
+  height: 70%;
   padding: 20px;
   position: relative;
   left: 50%;
+  align-items: center;
   transform: translate(-50%);
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.658);
+  background-color: rgba(73, 72, 72, 0.767);
   box-shadow: 10px 5px 5px rgba(15, 15, 15, 0.562);
 
   
@@ -176,12 +172,12 @@ body{
   display: flex;
   background-color: black;
   width: 30%;
-  height: 90%;
+  height: 600px;
   object-fit: cover;
   margin: 0;
   position: relative;
   right: 15px;
-  background-image: url('minhafoto.jpg');
+  background-image: url('./fotos/minhafoto.jpg');
   border-radius: 20%;
 }
 
@@ -189,10 +185,8 @@ body{
   display: flex;
   border: 1px rgba(255, 0, 0, 0) solid;
   width: 60%;
-  height: 100%;
-  background-size: cover;
+  min-height: 100%;
   margin: 0;
-  position: relative;
   right: 15px;
   border-radius: 20%;
   margin-left: 20px;
@@ -222,7 +216,64 @@ body{
   color: rgba(240, 248, 255, 0);
 }
 
-@media (max-width: 700px){
+
+
+.biografia ul  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-size: 12.5pt;
+  justify-content: space-between;
+  list-style:none;
+}
+
+.experiencia p {
+  font-size: 14pt;
+}
+
+.projetos {
+  margin-top:200px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  color: aliceblue;
+  margin-bottom: 20px;
+  
+  
+}
+.title-project {
+  color: aliceblue;
+}
+.desc {
+  font-size: 14pt;
+  
+}
+
+.projeto-container {
+  background-color:rgba(73, 72, 72, 0.767);
+  border: 1px black solid;
+}
+
+.tecnologias-list  li{
+  list-style: disc;
+  text-align:left;
+}
+
+.tecnologias-title {
+}
+
+@media (max-width: 900px){
+
+  .biografia ul  {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
+  font-size: 12.5pt;
+  justify-content: space-between;
+}
 
   #list-links {
     display: none;
@@ -251,9 +302,6 @@ body{
     margin-top: 150px;
   }
 
-body{
-  
-}
   
 .foto{
   margin: 0;
@@ -299,5 +347,16 @@ body{
   font-size: 12.5pt;
 
 }
+
+.carousel * {
+  display: none;
+}
+
+.projeto {
+  background-color: rgba(73, 72, 72, 0.767);
+  display: flex;
+
+}
+
   
   }

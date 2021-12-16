@@ -19,25 +19,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-
+  <div id="nav">
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
     <div class="container-fluid"> 
-      <a class="navbar-brand tituloNav animate__animated animate__lightSpeedInLeft" href="#" >Site Pessoal</a>
+      <a class="navbar-brand tituloNav animate__animated animate__lightSpeedInLeft" href="#" >Portifolio</a>
       <div id="list-links">
-     <a href="#bio" class="list-link textoNav animate__animated animate__lightSpeedInLeft">Sobre mim</a>
-     <a href="#" class="list-link textoNav animate__animated animate__lightSpeedInLeft">Estudos</a>
-     <a href="#" class="list-link textoNav animate__animated animate__lightSpeedInLeft">Contato</a>
+        <a href="#bio" class="list-link textoNav animate__animated animate__lightSpeedInLeft">Sobre mim</a>
+        <a href="#projetos" class="list-link textoNav animate__animated animate__lightSpeedInLeft">Projetos</a>
+     <a href="#contato" class="list-link textoNav animate__animated animate__lightSpeedInLeft">Contato</a>
       </div>
       <button id="btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
   </nav>
-
   
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
+  </div>
+  
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">Menu</h5>
@@ -45,10 +45,10 @@
       </div>
       <div class="modal-body">
         <div class="list-modal">
-        <a href="#" class="list-link">Contato</a>
+        <a href="#contato" class="list-link">Contato</a>
         <a href="#bio" class="list-link">Sobre Mim</a>
-        <a href="#" class="list-link">Escolaridade e conhecimentos</a>
-        <a href="#" class="list-link">GitHub</a>
+        <a href="#projeto" class="list-link">Escolaridade e conhecimentos</a>
+        <a href="https://www.linkedin.com/in/pedro-2001/"  target="_blank" class="list-link">Linkedin</a>
         </div>
       </div>
       <div class="modal-footer">
@@ -84,7 +84,8 @@
   </div>
 
   <div class="mobile-verison">
-    <h1 id="#textoMobile">Versão Mobile</h1>
+    <h2 id="#textoMobile">Pedro Henrique WebDeveloper</h2>
+    <h4 id="#textoMobile">Versão Mobile</h4>
   </div>
 
   <!-- Parte sobre mim -->
@@ -96,25 +97,88 @@
           <hr>
         </div>
       
-        <div class="biografia">
+        <div class="biografia container">
           <h2 class="title-bio  animate__animated ">
             Esse sou eu!
           </h2>
-          <p class="lead">
-          <span> Frase favorita :</span> Todo mundo é um gênio. Mas se você julgar um peixe por sua capacidade de subir em uma árvore, ele vai gastar toda a vida acreditando que é estúpido.
-          </p> 
+         
               <a class="link" name='bio'></a>
           <p>
+           <span class="lead">Nome:</span> Pedro Henrique Loures Oliveira<br><br>
             Bom nasci em Ipatinga MG, mas fui criado no interior em uma pequena cidade chamada Piraúba, a cidade não tem referências tecnológicas ou grandes incentivos da área porem, isso não foi o suficiente para impedir meu amor pela tecnologia. 
           </p>
 
-        <p>
-          Muito determinado almejo sempre coisas boas, tenho bastante ambição de cada vez ser melhor dentro da minha área porem seguindo meu próprio ritmo não gosto de me comparar com os outros
+         <p>
+           <span>Conhecimentos</span>
+         <ul>
+           <li>Node.JS</li>
+            <li>React.js</li>
+             <li>MongoDB</li>
+              <li>SQL</li>
+               <li>HTML</li>
+                <li>CSS</li>
+                 <li>Redux</li>
+                  <li>PHP</li>
+                   <li>Entre outros...</li>
+         </ul>
+        </p>
+           <p>
+           <span>Experiências:</span>
+           <div class="experiencia">
+
+             <p>
+               <span>IAmovies:</span> Um aplicativo para web que listava varios filmes sobre tecnologias e mostrava suas respectivas notas no IMBD , feito para realizar consultar rapidas e filtros variados nos mais varidos filmes de ficção 
+              </p>
+              <p>
+                Cargo: Assistente de desenvolvimento<br>
+                tecnologias: PHP , SQL ,HTML , CSS
+              </p>
+
+
+                 <p>
+              <span>MudasDonaElzibia:</span>  Gerencias estoques de mudas , e promover a venda de variados produtos , tendo sistema de login e autenticação feitos em PHP 
+              </p>
+              <p>
+                Cargo: Assistente de desenvolvimento<br>
+                tecnologias: PHP , SQL , MyAdmin 
+              </p>
+            </div>
         </p>
 
         </div>
     </div>
   </div>
+
+
+
+ <!--  Projetos  -->
+
+<div class=" container-fluid  projetos" id="">
+  <h1 class="title-project display-2">Projetos Front-End</h1>
+  <div class="container-fluid projeto-container" id="projet">
+    <figure class="figure">
+  <img src="./gifs/2021-09-15 18-33-21.gif" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  <figcaption class="figure-caption">gif do projeto</figcaption>
+</figure>
+ <a class="link" name='projetos'></a>
+<div class="desc">
+  <p class="text-justify">Projeto Trivia , um jogo onde uma serie de perguntas vinda de um API , o objetivo do jogo é fazer o maximo de pontos que conseguir e subir no rankin <br><br>
+    <span class="lead"> tecnologias usadas:
+      React , Redux , HTML , CSS , JS , LOCALSTORAGE
+    </span>
+    <br>
+    <span class="lead"> ferramentas auxiliares e estrategias:
+      SCRUMB , TRELLO , Reuniões diarias com integrantes do grupo
+    </span>
+  </p>
+  <p>deseja ver o codigo fonte dessa aplicação?</p> <a href="#">Link do repositorio</a>
+
+</div>
+
+  </div>
+</div>
+
+
 
   <!-- java script -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

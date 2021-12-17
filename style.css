@@ -242,6 +242,7 @@ body {
   margin-bottom: 20px;
   
   
+  
 }
 .title-project {
   color: aliceblue;
@@ -254,6 +255,7 @@ body {
 .projeto-container {
   background-color:rgba(73, 72, 72, 0.767);
   border: 1px black solid;
+  margin-top: 100px;
 }
 
 .tecnologias-list  li{

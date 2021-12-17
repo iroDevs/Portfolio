@@ -263,7 +263,19 @@ body {
   text-align:left;
 }
 
-.tecnologias-title {
+footer {
+  padding: 50px;
+  color: aliceblue;
+  font-size: 14pt;
+  height: 200px;
+  background-color:black;
+  margin-top:50px;
+  border: 1px white solid;
+}
+
+
+footer {
+  
 }
 
 @media (max-width: 900px){

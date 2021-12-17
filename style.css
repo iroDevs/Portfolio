@@ -151,8 +151,8 @@ body {
 .container-bio {
   display: flex;
   border: 1px black solid;
-  margin-top: 200px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 100px;
   width: 90% ;
   height: 70%;
   padding: 20px;
@@ -268,14 +268,13 @@ footer {
   color: aliceblue;
   font-size: 14pt;
   height: 200px;
-  background-color:black;
+background-color:rgba(73, 72, 72, 0.767);
   margin-top:50px;
-  border: 1px white solid;
+  border: 1px rgb(0, 0, 0) solid;
 }
 
-
-footer {
-  
+body {
+  text-align: center;
 }
 
 @media (max-width: 900px){
